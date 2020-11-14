@@ -1,0 +1,18 @@
+N=1000;
+fs=500;
+n=(0:N-1)/fs;
+m=0.5;
+x1=sin(200*pi*n);
+x2=cos(20*pi*n);
+y=(1+m*x2).*x1;
+figure('color',[1 1 1 1]);
+subplot(2,1,1);
+plot(n,x2,'b');
+axis([0 1 -2 2]);
+xlabel('t');
+ylabel('x(t)');
+subplot(2,1,2);
+plot(n,y);
+axis([0 1 -2 2]);
+xlabel('t');
+ylabel('x_m(t)');
