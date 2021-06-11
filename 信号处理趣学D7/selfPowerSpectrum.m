@@ -1,0 +1,36 @@
+fs = 1000;
+n = 1001;
+t = (0:n-1)/fs;
+x_n = sin(2*pi*40*t) + 3*sin(2*pi*90*t)+randn(size(t));
+[Px, w] = periodogram(x_n, [], 1023, fs);
+figure('color', [1 1 1]);
+subplot(2, 3, 1);
+plot(t, x_n);
+xlabel('t');
+ylabel('x(t)');
+subplot(2, 3, 4);
+plot(w, 10*log10(Px));
+xlabel('Frequency/HZ');
+ylabel('Power spectrum/(dB/HZ)');
+x1 = sin(2*pi*40*t);
+x2 = sin(2*pi*90*t);
+[Px1, w1] = periodogram(x1, [], 1023, fs);
+[Px2, w2] = periodogram(x2, [], 1023, fs);
+
+subplot(2, 3, 2);
+plot(t, x1);
+xlabel('t');
+ylabel('x_1(t)');
+subplot(2, 3, 3);
+plot(t, x2);
+xlabel('t');
+ylabel('x_2(t)');
+
+subplot(2, 3, 5);
+plot(w1, 10*log10(Px1));
+xlabel('Frequency/HZ');
+ylabel('Power spectrum/(dB/HZ)');
+subplot(2, 3, 6);
+plot(w2, 10*log10(Px2));
+xlabel('Frequency/HZ');
+ylabel('Power spectrum/(dB/HZ)');

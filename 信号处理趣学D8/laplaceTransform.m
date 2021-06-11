@@ -1,0 +1,13 @@
+set(0,'defaultfigurecolor','w');
+a = 5; A = 5;
+w = -5*pi:0.01:5*pi;
+Xw = A./sqrt((w.^2+a^.2));
+phi = -atan(w/a);
+subplot(2,1,1);
+plot(Xw);
+xlabel('\omega');
+ylabel('|X(\omega)|');
+subplot(2,1,2);
+plot(phi);
+xlabel('\omega');
+ylabel('|\phi(\omega)|');
