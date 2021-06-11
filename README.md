@@ -1,6 +1,6 @@
 # Signal-Processing-by-MATLAB
 
-The project provides you simple example of the principle signal processing. You can find more details about how to use these code in CSDN blog "[信号处理趣学](https://anthonydave.blog.csdn.net/article/details/105806805)" 。 The author is CSDN bloger "狂小虎".
+The project provides you simple example of the principle signal processing. You can find more details about how to use these code in CSDN blog "[信号处理趣学](https://anthonydave.blog.csdn.net/article/details/105806805)" 。 The author is CSDN bloger "狂小虎". The codes are .m files, and you can run them in MATLAB.
 
 ## Content
 
