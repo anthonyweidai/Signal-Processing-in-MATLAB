@@ -2,7 +2,7 @@
 
 The project provides you simple example of the principle signal processing. You can find more details about how to use these code in CSDN blog "[信号处理趣学](https://anthonydave.blog.csdn.net/article/details/105806805)" 。 The author is CSDN bloger "狂小虎". The codes are .m files, and you can run them in MATLAB.
 
-## Content
+## Content: Relative Blogs
 [信号处理趣学D0——系列专栏的说明与目录](https://anthonydave.blog.csdn.net/article/details/105806805)
 
 [信号处理趣学D1——相关函数的意义&利用自相关函数消除噪声](https://blog.csdn.net/Davidietop/article/details/105122814)
